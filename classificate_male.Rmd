@@ -1,0 +1,18 @@
+---
+title: ""
+output: html_document
+---
+
+<br />
+<font size="8" color="darkblue">*Immagini classificate male*</font> 
+
+<br />
+Di seguito viene proposta una selezione di immagini mal classificate dal modello, con la relativa etichetta e probabilità. Le immagini sono state selezionate sulla base del test effettuato.
+
+
+![](foto_mal_classificate/Dv0vyJnWoAAbsqZbis.jpg)
+![](foto_mal_classificate/Dv0YssaWsAA6juvbis.jpg)
+
+
+
+
