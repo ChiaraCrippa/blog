@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title></title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h2 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h3 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h4 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h5 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h6 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"></a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="about.html">Object classification</a>
+</li>
+<li>
+  <a href="classificate_bene.html">Immagini classificate bene</a>
+</li>
+<li>
+  <a href="classificate_male.html">Immagini classificate male</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+
+</div>
+
+
+<p><img src="titolo.png" width="200%" style="display: block; margin: auto;" /></p>
+<p><em>Vi siete mai chiesti quale sia l’oggetto più fotografato e postato sui social? E se il periodo di interesse fosse proprio quello di Capodanno?</em></p>
+<p><br /> Questo è esattamente il quesito che ci siamo poste in corrispondenza dell’avvento del nuovo anno, ma soprattutto è stata la curiosità che abbiamo assolutamente voluto soddisfare in un momento di vacanza, spirito natalizio e spensieratezza. Se anche voi siete curiosi, continuate a leggere questo blog per scoprirne di più!</p>
+<p><br /> Stuzzicate da quella che sembrava una scommessa tra amiche, abbiamo deciso di estendere il campo dell’indagine a 43 Paesi del mondo, selezionati in maniera casuale e omogenea dai diversi continenti in base alla densità di popolazione, alla presenza di account Twitter attivi, ma soprattutto alla disponibilità di dati, in particolare:</p>
+<ul>
+<li><strong>Africa</strong>: <em>Angola</em>, <em>Egitto</em>, <em>Marocco</em>, <em>Nigeria</em>, <em>Senegal</em>, <em>Tanzania</em>, <em>Uganda</em>.</li>
+<li><strong>America</strong>: <em>Argentina</em>, <em>Brasile</em>, <em>Canada</em>, <em>Cile</em>, <em>Colombia</em>, <em>Ecuador</em>, <em>Messico</em>, <em>Perù</em>, <em>Stati Uniti</em>, <em>Venezuela</em>.</li>
+<li><strong>Asia</strong>: <em>Arabia Saudita</em>, <em>Corea del Nord</em>, <em>Filippine</em>, <em>Giappone</em>, <em>India</em>, <em>Indonesia</em>, <em>Pakistan</em>, <em>Russia</em>, <em>Thailandia</em>, <em>Turchia</em>.</li>
+<li><strong>Europa</strong>: <em>Belgio</em>, <em>Francia</em>, <em>Germania</em>, <em>Irlanda</em>, <em>Italia</em>, <em>Norvegia</em>, <em>Paesi Bassi</em>, <em>Regno Unito</em>, <em>Russia</em>, <em>Spagna</em>, <em>Svezia</em>, <em>Turchia</em>.</li>
+<li><strong>Oceania</strong>: <em>Australia</em>, <em>Fiji</em>, <em>Indonesia</em>, <em>Nuova Zelanda</em>, <em>Papua Nuova Guinea</em>, <em>Samoa</em>, <em>Tonga</em>.</li>
+</ul>
+<p><br /> Si sono poi utilizzate 1000 immagini in formato JPG per 42 paesi e solo 234 per la Russia per assenza di dati. Tuttavia per presentare un lavoro completo ed in linea con le scelte adottate finora, abbiamo ritenuto opportuno considerare anche quest’ultimo Paese nonostante la ridotta numerosità delle osservazioni a disposizione. Questa scelta è stata rafforzata dalla volontà di scegliere un Paese rappresentativo e di ampie dimensioni nel continente asiatico, data la mancanza dei dati del Paese più popolato al mondo, vale a dire la Cina, a causa dell’adozione di una politica restrittiva che censura la piattaforma social Twitter. Le immagini in questione sono state postate da account Twitter (registrati in ognuno dei Paesi selezionati nell’analisi) tra il 31 Dicembre 2018 e il 2 Gennaio 2019 e vi è stato applicato un modello di <em>object classification</em>, capace di riconoscere l’oggetto presente nella foto o nell’immagine. In particolar modo il modello che si è deciso di utilizzare è stato quello delle reti neurali convoluzionali. I risultati sono stati davvero bizzarri e divertenti, soprattutto quando il modello mal interpretava l’oggetto raffigurato. Il modello di deep learning utilizzato missclassifica l’oggetto delle immagini quando queste risultano essere poco nitide, sfocate e soprattutto quando si presentano gruppi di persone. In questi casi infatti il modello fonda la classificazione dell’oggetto focalizzandosi sui contorni e dunque sulla forma assunta dalla massa. Altre volte invece, l’algoritmo effettua una classificazione basandosi sulla posizione assunta dal soggetto dell’immagine, un chiaro esempio è costituito dalla foto di un ragazzo, in una posa bizzarra, identificato come un giocatore di baseball. Al contrario, classifica con probabilità molto elevate gli oggetti in primo piano con sfondo piuttosto nitido, gli animali (specificandone addirittura la razza), ma anche i siti web, i poster e le locandine.</p>
+<p><br /> In questo caso di analisi si è deciso di utilizzare un modello pre-allenato per risolvere problemi legati all’aspetto computazionale. Il modello da noi scelto e implementato in <em>Python</em> è stato il <em>Visual Geometry Group</em> (VGG16), il quale è stato pre-allenato tramite il database di immagini di ImageNet, che ci ha permesso di classificare le foto con una vasta e dettagliata gamma di etichette (<a href="https://s3.amazonaws.com/outcome-blog/imagenet/labels.json">etichette</a>). Per lo scopo dell’analisi si è deciso di aggregare queste ultime in classi più generiche, ma ugualmente rappresentative, in modo da facilitare anche l’interpretazione dei risultati. Le classi costruite sono: <em>“Abbigliamento”</em>, <em>“Accessori per i veicoli”</em>, <em>“Accessori per la persona”</em>, <em>“Aerei”</em>, <em>“Alimenti”</em>, <em>“Anfibi”</em>, <em>”Animali estinti”</em>, <em>“Animali marini”</em>, <em>“Animali selvatici”</em>, <em>“Aracnidi”</em>, <em>“Architetture”</em>, <em>”Armi”</em>, <em>“Bevande”</em>, <em>”Bovini”</em>, <em>“Persone”</em>, <em>“Cani”</em>, <em>“Crostacei”</em>, <em>“Edifici”</em>, <em>“Fauna”</em>, <em>“Gatti”</em>, <em>“Imbarcazioni”</em>, <em>“Insetti”</em>, <em>“Molluschi”</em>, <em>“Mustelidi”</em>, <em>“Natura”</em>, <em>“Oggetti da lavoro”</em>, <em>”Oggetti per il sociale”</em>, <em>“Oggetti della casa”</em>, <em>“Oggetti per la cura della persona”</em>, <em>“Oggetti tecnologici”</em>, <em>“Oggetti per il tempo libero”</em>, <em>“Ominidi e scimmie”</em>, <em>“Parti del corpo”</em>, <em>“Pesci”</em>, <em>“Rettili”</em>, <em>“Roditori”</em>, <em>”Strumenti musicali”</em>, <em>“Uccelli”</em>, <em>“Veicoli”</em>.</p>
+<p><br /> I risultati elaborati dal VGG16 hanno permesso di identificare un oggetto prevalente per ciascuno dei territori precedentemente elencati, come mostra la cartina sottostante, senza tralasciare però una buona percentuale di errore nella classificazione. Per valutare l’accuratezza e la validità di questo progetto, si è realizzato un test a mano basato su un campione casuale di 430 immagini (10 per ciascun Paese) e si è poi quantificata la proporzione di quelle ben classificate sul totale considerato. Per la precisione, in questo caso di studio, su 430 immagini reali, il 36% viene classificato correttamente con elevata probabilità.</p>
+<p><br /> È immediato percepire che le classi predominanti nel panorama mondiale sono tre, vale a dire <em>“Oggetti per il tempo libero”</em>, <em>“Abbigliamento”</em> e <em>“Oggetti tecnologici”</em>, rappresentati rispettivamente da verde, blu petrolio e rosso corallo, come descritto dalla legenda. Questi risultati sono stati ottenuti considerando solo gli oggetti con una probabilità associata maggiore di 0.3 per assicurarci dei risultati più robusti.</p>
+<p><br /> <img src="Mappa.jpeg" width="200%" style="display: block; margin: auto;" /></p>
+<p><br /> In particolare, risulta evidente come zone limitrofe siano spesso caratterizzate dalla stessa colorazione, permettendoci di individuare anche dei gruppi di nazioni rappresentate dalla stessa classe modale. Questo aspetto potrebbe essere spiegato dall’ipotesi di numerosi <em>re-tweet</em> della stessa foto, dato il breve arco temporale considerato. Aspetto che è stato in seguito riscontrato dalle foto da noi analizzate. Di seguito vengono proposti i risultati ottenuti:</p>
+<ul>
+<li><strong>Oggetti per il tempo libero</strong>: <em>Stati Uniti</em>, <em>Canada</em>, <em>Perù</em>, <em>Cile</em>, <em>Argentina</em>, <em>Messico</em>, <em>Marocco</em>, <em>Egitto</em>, <em>Arabia Saudita</em>, <em>Angola</em>, <em>Pakistan</em>, <em>Francia</em>, <em>Belgio</em>, <em>Paesi Bassi</em>, <em>Germania</em>, <em>Norvegia</em>, <em>Svezia</em>, <em>Australia</em>, <em>Filippine</em>, <em>Nuova Zelanda</em>, <em>Samoa</em>, <em>Fiji</em>, <em>Italia</em>, <em>Indonesia</em>.</li>
+<li><strong>Abbigliamento</strong>: <em>Brasile</em>, <em>Ecuador</em>, <em>Colombia</em>, <em>Senegal</em>, <em>Nigeria</em>, <em>Uganda</em>, <em>Turchia</em>, <em>Spagna</em>, <em>Papua Nuova Guinea</em>, <em>Thailandia</em>, <em>Tonga</em>, <em>Irlanda</em>.</li>
+<li><strong>Oggetti tecnologici</strong>: <em>Regno Unito</em>, <em>Venezuela</em>, <em>Russia</em>, <em>Tanzania</em>, <em>India</em>, <em>Corea del Nord</em>, <em>Giappone</em>.</li>
+</ul>
+<p><br /> Nonostante i risultati ottenuti non siano particolarmente eterogenei, abbiamo ritenuto questo progetto ugualmente interessante al fine di soddisfare una nostra personale curiosità, senza tralasciare il fatto che questo lavoro possa essere esteso ad un progetto di brand detection per permettere a grandi aziende e multinazionali di verificare l’impatto delle vendite dei propri prodotti sui consumatori che utilizzano le piattaforme social. Nel nostro caso, si tratta dunque di dare uno spunto per possibili progetti futuri di più ampie vedute.</p>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
