@@ -1,0 +1,29 @@
+name: "website"
+output_dir: "."
+navbar:
+  title: ""
+  left:
+  - text: "Home"
+    href: index.html
+  - text: "Object classification"
+    href: about.html
+  - text: "😊"
+    href: classificate_bene.html
+  - text: "😕"
+    href: classificate_male.html
+
+output:
+  html_document:
+    theme: flatly
+    css: style.css
+    highlight: tango
+    text-align: right
+ 
+
+
+
+
+    
+  
+      
+      
