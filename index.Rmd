@@ -16,5 +16,5 @@ title: "About us"
 <font size="4" color="darkblue">*Iuliana Anastasia Iacoban, 790688*</font> 
 
 <br />
-![](/Users/chiara/Desktop/girl.jpeg)
+![](girl.jpeg)
 
