@@ -1,0 +1,20 @@
+---
+title: "About us"
+---
+
+<br />
+
+#<font size="8" color="black">*Team: The Regressionists*</font>  
+
+<br />
+<font size="4" color="darkblue">*Chiara Aldeghi, 791835*</font>  
+
+<br />
+<font size="4" color="darkblue">*Chiara Crippa, 791876*</font>  
+
+<br />
+<font size="4" color="darkblue">*Iuliana Anastasia Iacoban, 790688*</font> 
+
+<br />
+![](girl.jpeg)
+
