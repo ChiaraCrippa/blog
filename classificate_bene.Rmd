@@ -1,0 +1,55 @@
+---
+title: ""
+output: html_document
+---
+
+<br />
+<font size="8" color=000066>*Immagini correttamente classificate*</font>  
+
+<br />
+<div style="text-align: justify">
+Di seguito viene proposta una selezione di immagini ben classificate dal modello, con la relativa etichetta e probabilità. Le immagini sono state selezionate sulla base del test da noi effettuato.</div>
+
+<br />
+![](photo_good/alp2.jpg)
+![](photo_good/baseball2.jpg)
+![](photo_good/daisy2.jpg)
+![](photo_good/Dv0-937X4AAF54sbis.jpg)
+![](photo_good/Dv0kFLoUwAA_uZRbis.jpg)
+![](photo_good/.jpg)
+![](photo_good/Dv0p3ZLWsAA32YRbis.jpg)
+![](photo_good/Dv0Yt4EX4AAUP6nbis.jpg)
+![](photo_good/.jpg)
+![](photo_good/Dv1l_cOW0AE2S9zbis.jpg)
+![](photo_good/.jpg)
+![](photo_good/Dv1OhiSWwAI0Z8fbis.jpg)
+![](photo_good/Dv1Zuw7WsAA8Y2Rbis.jpg)
+![](photo_good/Dv2a3I0VYAAyXibbis.jpg)
+![](photo_good/Dv2bJq_X4AEyLu9bis.jpg)
+![](photo_good/Dv2Bv-fW0AIzeAIbis.jpg)
+![](photo_good/Dv2jJD1X4AEHShFbis.jpg)
+![](photo_good/Dv2lq78WsAA3mbfbis.jpg)
+![](photo_good/Dv2quMbWsAEiCntbis.jpg)
+![](photo_good/.jpg)
+![](photo_good/Dv2Rx5bXcAER3A7bis.jpg)
+![](photo_good/Dv2T2D-XQAAJOnSbis.jpg)
+![](photo_good/Dv3SMuLX0AAXoxpbis.jpg)
+![](photo_good/Dv3TjpAX4AAdLpSbis.jpg)
+![](photo_good/Dv3TtSsWoAA9J0Kbis.jpg)
+![](photo_good/Dv18NENWwAcm7NGbis.jpg)
+![](photo_good/Dv19mR2X0AA_uBzbis.jpg)
+![](photo_good/DvvwdeCX4AAvKK7bis.jpg)
+![](photo_good/DvzXF77UUAEn2zibis.jpg)
+![](photo_good/gattobis.jpg)
+![](photo_good/guitar2.jpg)
+![](photo_good/indian_elephant2.jpg)
+![](photo_good/mare2.jpg)
+![](photo_good/shoes2.jpg)
+
+
+
+
+
+
+
+
