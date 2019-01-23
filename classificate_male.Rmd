@@ -1,0 +1,43 @@
+---
+title: ""
+output: html_document
+---
+
+<br />
+<font size="8" color="darkblue">*Immagini erroneamente classificate*</font> 
+
+<br />
+<div style="text-align: justify">
+Di seguito viene proposta una selezione di immagini mal classificate dal modello, con la relativa etichetta e probabilità. Le immagini sono state selezionate sulla base del test da noi effettuato.
+E' evidente che in caso di probabilità inferiore a 0.3, l'algoritmo ha difficoltà ad individuare l'oggetto effettivo presente nell'immagine. Quando tale soglia viene superata, l'algoritmo compie un errore giustificabile. Si tratta infatti di errori che anche l'occhio umano potrebbe ragionevolmente compiere. </div>
+
+
+<br />
+![](photo_bad/anemone2.jpg)
+![](photo_bad/barca2.jpg)
+![](photo_bad/Dv0YssaWsAA6juvbis.jpg)
+![](photo_bad/Dv1-Dk1XcAA-zFXbis.jpg)
+![](photo_bad/Dv1RJmFUcAUtNG7bis.jpg)
+![](photo_bad/Dv1ugfXW0AAWgCYbis.jpg)
+![](photo_bad/Dv1wf5gXcAEab_Rbis.jpg)
+![](photo_bad/Dv2ejYEX0AAYsupbis.jpg)
+![](photo_bad/Dv2h5G8WwAAa13pbis.jpg)
+![](photo_bad/Dv2ioZyX0AAZm5sbis.jpg)
+
+![](photo_bad/Dv2mKWKXgAEjudcbis.jpg)
+
+![](photo_bad/Dv02tZoXcAALkUnbis.jpg)
+![](photo_bad/Dv2VFXRUYAAuDu7bis.jpg)
+![](photo_bad/Dv3SyJrXQAAlgkRbis.jpg)
+![](photo_bad/Dv013NAXgAE36Hxbis.jpg)
+![](photo_bad/Dv25dUFX4AU8nuvbis.jpg)
+![](photo_bad/Dv25ojrU8AcCPaxbis.jpg)
+![](photo_bad/Dv26CggU0AAmwbRbis.jpg)
+![](photo_bad/Dvz-wyVWsAAF3wNbis.jpg)
+![](photo_bad/Dvzxq6CWwAE5uqwbis.jpg)
+![](photo_bad/DvzXY25UcAA2ew6bis.jpg)
+![](photo_bad/ecografia2.jpg)
+![](photo_bad/fontana2.jpg)
+![](photo_bad/jellyfish2.jpg)
+![](photo_bad/plasticbag2.jpg)
+
